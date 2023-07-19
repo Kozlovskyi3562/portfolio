@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@font-face {
+  
+  font-family: 'Forum';
+  src: url('assets/Fonts/Forum.woff2') format('woff2'),
+  url('assets/Fonts/Forum.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  height: auto;
+  background: linear-gradient(296.87deg, rgba(96, 74, 20, 0) -7.14%, rgba(173, 141, 92, 0.47) 76.73%);
+  font-family: 'Forum';
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.img-2 {
+  margin: 20px 30px;
+  width: 60%;
+  height: auto;
+  
+}
+
+.text {
+  /* border: 1px solid black; */
+
+}
+.content {
+  display: flex;
+}
+.select_menu {
+  height: 484px;
+  width: 600px;
+  /* border: solid 1px blue; */
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 70px;
+  background-color:rgb(223 192 156 / 65%);
+}
+.select_menu_item {
+  /* padding: 10px; */
+  border: 1px solid black;
+  width: auto;
+  display: flex;
+  font-size: 20px;
+  transition: all 0.1s;
+}
+.select_menu_item:hover {
+  background-color: rgb(192, 164, 129);
+  color: rgb(104, 50, 50);
+  text-shadow: 1px 1px 2px rgb(179, 105, 105), 0 0 2em rgb(255, 255, 255);
+}
+.trans {
+  margin-left: 20px;
+  width: 100%;
+  transition: all 0.4s;
+  
+}
+.trans:hover {
+  transform: scale(1.1)
+}
+.select_menu_item_top {
+  border-radius: 20px 20px 0 0;
+}
+.select_menu_item_bottom {
+  border-radius: 0 0 20px 20px;
+}
+.parent {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  text-align: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.button_buy {
+    font-family: "Forum";
+    font-size: 100%;
+    display: inline-block;
+    background: rgb(223 192 156 / 85%);
+    margin: 20px 0 0 0 ;
+    padding: 10px;
+    text-transform: none;
+    border-radius: 4px;
+    width: 100%;
+    border: 0px;
+    /* visibility: hidden; */
+    transition: all 0.2s;
+}
+.button_buy:hover {
+  transform: scale(1.1);
+}
+.button_image {
+  height: 20px;
+  width: 20px;
+  /* border: solid 1px black; */
+  vertical-align: middle;
+
+}
+.child {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.534);
+  width: 220px;
+  max-height: 600px;
+  border-radius: 20px;
+}
+
+.child + .child {
+  margin: 10px;
+}
+
+.img-grow-hover {
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+
+.img-grow-hover:hover {
+  transform: scale(1.1);
+}
+
+p {
+  text-align: left;
+  margin: 10px 15px;
+  font-size: 100%;
+}
+
+.link {
+  /* border: 1px solid red; */
+  font-size:0px;
+}
